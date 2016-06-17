@@ -14,7 +14,9 @@
     helm-gtags
     helm-projectile
     helm-swoop
-    ;google-c-style ;; Install google-c-style
+    flycheck
+    google-c-style ;; Install google-c-style
+    flycheck-google-cpplint
     ;; function-args
     clean-aindent-mode
     comment-dwim-2

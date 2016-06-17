@@ -57,11 +57,9 @@
 (projectile-global-mode)
 (setq projectile-enable-caching t)
 
-(require 'helm-projectile)
-(helm-projectile-on)
-(setq projectile-completion-system 'helm)
-(setq projectile-indexing-method 'alien)
-
 ;; Package zygospore
 (global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+
+;; Flycheck
+(global-flycheck-mode)
 
