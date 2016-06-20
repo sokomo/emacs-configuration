@@ -7,6 +7,7 @@
 
 (defconst demo-packages
   '(anzu
+    sr-speedbar
     company
     company-c-headers
     duplicate-thing
