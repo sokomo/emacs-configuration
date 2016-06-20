@@ -8,6 +8,7 @@
 (defconst demo-packages
   '(anzu
     company
+    company-c-headers
     duplicate-thing
     ggtags
     helm

@@ -13,3 +13,5 @@
 
 (define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
 
+
+(setq-local imenu-create-index-function #'ggtags-build-imenu-index)
