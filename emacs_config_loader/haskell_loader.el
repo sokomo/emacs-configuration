@@ -3,7 +3,7 @@
 ;;(haskell-mode 1)
 
 ; Make Emacs look in Cabal directory for binaries
-(let ((my-cabal-path (expand-file-name "~/haskell_emacs_env/.cabal-sandbox/bin/")))
+(let ((my-cabal-path (expand-file-name "~/haskell-emacs-env/.cabal-sandbox/bin/")))
   (setenv "PATH" (concat my-cabal-path ":" (getenv "PATH")))
   (add-to-list 'exec-path my-cabal-path))
 
