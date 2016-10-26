@@ -5,7 +5,7 @@
 (package-initialize)
 (package-list-packages)
 
-(defconst demo-packages
+(defconst working-packages
   '(anzu
     sr-speedbar
     company
@@ -30,14 +30,21 @@
     projectile
     volatile-highlights
     undo-tree
-    zygospore))
+    zygospore
+    ;; Haskell
+    ; haskel-mode
+    ghc
+    hindent
+    company-ghc
+    shm
+    ))
 
 (defun install-packages ()
   "Install all required packages."
   (interactive)
   (unless package-archive-contents
     (package-refresh-contents))
-  (dolist (package demo-packages)
+  (dolist (package working-packages)
     (unless (package-installed-p package)
       (package-install package))))
 

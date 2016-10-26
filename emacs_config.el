@@ -15,7 +15,7 @@
 (load-file "~/.emacs.d/emacs_config_loader/c_cpp_loader.elc")
 (load-file "~/.emacs.d/emacs_config_loader/auctex_loader.elc")
 (load-file "~/.emacs.d/emacs_config_loader/haskell_loader.elc")
-;(load-file "~/.emacs.d/emacs_config_loader/lua_loader.el")
-;(load-file "~/.emacs.d/emacs_config_loader/perl_loader.el")
-;(load-file "~/.emacs.d/emacs_config_loader/python_loader.el")
+;(load-file "~/.emacs.d/emacs_config_loader/lua_loader.elc")
+;(load-file "~/.emacs.d/emacs_config_loader/perl_loader.elc")
+;(load-file "~/.emacs.d/emacs_config_loader/python_loader.elc")
 
