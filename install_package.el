@@ -8,6 +8,7 @@
 (defconst working-packages
   '(anzu
     sr-speedbar
+    ecb
     company
     company-c-headers
     duplicate-thing
@@ -32,12 +33,12 @@
     undo-tree
     zygospore
     ;; Haskell
-    ; haskel-mode
+    ;; haskel-mode
+    flycheck-haskell
     ghc
     hindent
     company-ghc
-    shm
-    ))
+    shm))
 
 (defun install-packages ()
   "Install all required packages."

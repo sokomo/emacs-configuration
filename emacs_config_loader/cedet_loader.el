@@ -19,17 +19,18 @@
 (require 'ede)
 (global-ede-mode)
 
-(windmove-default-keybindings)
+;(windmove-default-keybindings)
 
 ; company
 (require 'company)
+;(eval-after-load 'company
+;  '(add-to-list 'company-backends 'company-irony))
 
 (add-hook 'after-init-hook 'global-company-mode)
 (delete 'company-semantic company-backends)
 ;;(define-key c-mode-map  [(tab)] 'company-complete)
 ;;(define-key c++-mode-map  [(tab)] 'company-complete)
-(define-key c-mode-map  [(control tab)] 'company-complete)
-(define-key c++-mode-map  [(control tab)] 'company-complete)
+;(define-key c-mode-base-map (kbd "<C-tab>") (function company-complete))
 
 ;; company-c-headers
 (add-to-list 'company-backends 'company-c-headers)

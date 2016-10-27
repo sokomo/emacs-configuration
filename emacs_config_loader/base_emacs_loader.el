@@ -19,6 +19,10 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 
+(require 'whitespace)
+ (setq whitespace-style '(face empty tabs lines-tail trailing))
+ (global-whitespace-mode t)
+
 ;; Compile
 (global-set-key (kbd "<f5>") (lambda ()
                                (interactive)
