@@ -1,6 +1,9 @@
 
 (require 'package)
 (add-to-list 'package-archives
+             '("stable-melpa" . "http://stable.melpa.org/packages/") t)
+
+(add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 
 ;; (setq package-enable-at-startup nil)
