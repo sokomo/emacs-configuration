@@ -3,9 +3,9 @@
 ;;(haskell-mode 1)
 
 ; Make Emacs look in Cabal directory for binaries
-(let ((my-cabal-path (expand-file-name "~/haskell-emacs-env/.cabal-sandbox/bin/")))
-  (setenv "PATH" (concat my-cabal-path ":" (getenv "PATH")))
-  (add-to-list 'exec-path my-cabal-path))
+;(let ((my-cabal-path (expand-file-name "~/haskell-emacs-env/.cabal-sandbox/bin/")))
+;  (setenv "PATH" (concat my-cabal-path ":" (getenv "PATH")))
+;  (add-to-list 'exec-path my-cabal-path))
 
 ;; flycheck
 (eval-after-load 'flycheck
@@ -70,10 +70,10 @@
 
 ; Enable company-mode
 (require 'company)
-; Use company in Haskell buffers
-; (add-hook 'haskell-mode-hook 'company-mode)
+ Use company in Haskell buffers
+ (add-hook 'haskell-mode-hook 'company-mode)
 ; Use company in all buffers
-(add-hook 'after-init-hook 'global-company-mode)
+;(add-hook 'after-init-hook 'global-company-mode)
 
 (add-to-list 'company-backends 'company-ghc)
 (custom-set-variables '(company-ghc-show-info t))
