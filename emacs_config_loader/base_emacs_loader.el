@@ -9,6 +9,13 @@
 ;; Indent
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 
+;; Indent guide line
+(require 'indent-guide)
+(set-face-background 'indent-guide-face "gray")
+(add-hook 'prog-mode-hook 'indent-guide-mode)
+(add-hook 'ess-mode-hook 'indent-guide-mode)
+(add-hook 'markdown-mode-hook 'indent-guide-mode)
+
 ;; activate whitespace-mode to view all whitespace characters
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 
@@ -58,7 +65,7 @@
 
 ;; Package: projejctile
 (require 'projectile)
-(projectile-global-mode)
+(projectile-mode)
 (setq projectile-enable-caching t)
 
 ;; Package zygospore

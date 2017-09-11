@@ -16,6 +16,7 @@
     company-c-headers
     duplicate-thing
     ggtags
+    indent-guide
     helm
     helm-gtags
     helm-projectile
@@ -41,7 +42,8 @@
     ghc
     hindent
     company-ghc
-    shm))
+    shm
+    yaml-mode))
 
 (defun install-packages ()
   "Install all required packages."

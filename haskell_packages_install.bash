@@ -5,7 +5,8 @@ LIST_PACKAGES="happy hasktags stylish-haskell ghc-mod hlint hoogle hindent"
 
 cabal sandbox init
 cabal update
-cabal install --verbose=3 $LIST_PACKAGES
+cabal install cabal-install
+cabal install $LIST_PACKAGES
 
 #stack new haskell-emacs-env
 #pushd haskell-emacs-env
