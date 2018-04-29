@@ -13,17 +13,22 @@
     sr-speedbar
     ecb
     company
-    company-c-headers
+    ; company-c-headers
     duplicate-thing
-    ggtags
+    ; ggtags
     indent-guide
     helm
-    helm-gtags
+    ; helm-gtags
     helm-projectile
     helm-swoop
-    flycheck
-    google-c-style ;; Install google-c-style
-    flycheck-google-cpplint
+    ;; LSP
+    lsp-mode
+    lsp-ui
+    company-lsp
+    cquery
+    lsp-haskell
+    ;google-c-style ;; Install google-c-style
+    ;flycheck-google-cpplint
     ;; function-args
     clean-aindent-mode
     comment-dwim-2
@@ -38,10 +43,10 @@
     zygospore
     ;; Haskell
     ;; haskel-mode
-    flycheck-haskell
-    ghc
-    hindent
-    company-ghc
+    ;flycheck-haskell
+    ;ghc
+    ;hindent
+    ;company-ghc
     shm
     yaml-mode))
 

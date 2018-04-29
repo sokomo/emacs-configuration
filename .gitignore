@@ -1,0 +1,14 @@
+.dir-locals.el
+.SRCINFO
+*.elc
+*.swp
+*.pyc
+*.log
+*.retry
+*.tar.*
+*.[xg]z
+*~
+log/
+cache/
+credentials/
+.vagrant/
